@@ -1,0 +1,94 @@
+//First program.
+
+#include "stdio.h"
+void main()
+{
+    printf("Hello World");
+}
+
+//print your name.  
+
+#include "stdio.h"
+void main()
+{
+    printf("MY name is VIKASH TIWARI"); 
+}
+
+
+
+// 2. wap to find the perimeter and area of rectangle.
+// area = b*h
+// perimeter =2()
+
+#include "stdio.h"
+void main()
+{
+    int area,p,b=12,h=12;
+    area=b*h;
+    p=2*(b+h);
+    printf("Area of rectangle :%d\n",area);
+    printf("Perimeter of ractangle :%d",p);
+    
+}
+
+
+// 4. wap to accept two integers from the user and calculate the sum of two integers.
+
+#include "stdio.h"
+void main()
+{
+ int a,b,sum;
+ printf("Enter the value of a:");
+ scanf("%d",&a);
+ printf("Enter the value of b:");
+ scanf("%d",&b);
+ sum=a+b;
+ printf("Sum of two integers is :%d",sum);
+}
+
+
+// 3. wap to find the perimeter and area of a circle with a given radius.
+
+#include "stdio.h"
+void main()
+{
+    int r=4;
+    int a=(3.17*r*r);
+    printf("area of circle is :%d",a);
+}
+
+
+// Simple Interest .
+
+#include "stdio.h"
+void main()
+{
+    int p,r,t,I;
+    printf("Enter value of p,t,r:");
+    scanf("%d%d%d",&p,&r,&t);
+    I=(p*r*t)/100;
+    printf("Interest is:%d",I);
+}
+
+// swap the two number each other.
+
+#include "stdio.h"
+void main()
+{
+    // int a=3,b=5,c;
+    // c=a;
+    // a=b;
+    // b=c;
+    // printf("value of a is :%d \n",a);
+    // printf("value of b is: %d",b);
+    int a,b;
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+    printf("Enteer the value of b:");
+    scanf("%d",&b);
+    a=b;
+    b=a;
+    printf("swap value of a is: %d \n",a);
+    printf("swap value of b is: %d \n",b);
+
+}
