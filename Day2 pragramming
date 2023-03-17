@@ -1,0 +1,92 @@
+	// 4. Write a c programm to accept two integers and check whether they are equal or not.
+
+#include "stdio.h"
+void main()
+{
+    int x,y;
+    printf("enter the two number :");
+    scanf("\n%d\n%d",&x,&y);
+    if(x==y)
+    {
+        printf("two integer numbers are equal");
+    }
+    else
+    {
+        printf("integers are not equal");
+    }
+}    
+
+// 5. Write a c programm to check whether a given number is even or odd.
+
+#include "stdio.h"
+void main()
+{
+    int num;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    if(num%2==0)
+    {
+        printf("Even number");
+    }
+    else
+    {
+        printf("Odd number");
+    }
+}
+
+// 6. Write a c programm to check whether a given number is positive or negative.
+
+#include "stdio.h"
+void main()
+{
+    int num;
+    printf("Enter the number :");
+    scanf("%d",&num);
+
+    if(num>0)
+    {
+        printf("positive number");
+    }
+    else
+    {
+        printf("Negative number");
+    }
+}
+
+
+// 7. write a c program to check whether a given year is leap year or not. 
+
+#include "stdio.h"
+void main()
+{
+    int year;
+    printf("Enter the year :");
+    scanf("%d",&year);
+
+    if(year%4==0)
+    {
+        printf("This is Leap year");
+    }
+    else{
+        printf("not Leap year");
+    }
+}
+
+	// 8. Write a c program to read the age of a candidate and 
+    // determine whether it is eligible for casting his/her own vote.
+
+#include "stdio.h"
+void main()
+{
+    int age;
+    printf("Enter the age :");
+    scanf("%d",&age);
+
+    if(age>=18)
+    {
+        printf("Eligible for vote");
+    }
+    else{
+        printf("Not Eligible for vote");
+    }
+}   
