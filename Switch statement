@@ -1,0 +1,171 @@
+switch:
+____________
+
+switch is a keyword used in control statement.
+switch statement contain break ,case and default keywords.
+case is used for condition.
+break is used for stop forcefully execution thre code.
+if all case condition are fase then default block will be executed.
+
+Syntax:
+___________
+switch(var_name)
+{
+case1:
+//statement;
+break;
+case 2:
+//statement;
+break;
+.
+.
+.
+default:
+//statement;
+break;
+}
+
+
+// 10.Write a program to print day of week name using switch case.
+
+#include "stdio.h"
+void main()
+{
+    int choice;
+    printf("Enter the choice :");
+    scanf("%d",&choice);
+    switch (choice)
+    {
+    case 1:
+    printf("Monday");
+    break;
+
+    case 2:
+    printf("Tuesday");
+    break;
+
+    case 3:
+    printf("Wednesday");
+    break;
+
+    case 4:
+    printf("Thursday");
+    break;
+
+    case 5:
+    printf("Friday");
+    break;
+
+    case 6:
+    printf("Saturday");
+    break;
+
+    case 7:
+    printf("Sunday");
+    break;
+    
+    default:
+    printf("Invalid Choice");
+    break;
+    }
+}
+
+
+// 11. Write a program to check whether an alphabet is vowel or consonent using switch case.
+
+#include "stdio.h"
+void main()
+{
+    char choice;
+    printf("Enter the choice :");
+    scanf("%c",&choice);
+    switch (choice)
+    {
+    case 'a':
+    printf("vowel");
+    break;
+
+    case 'e':
+        printf("vowel");
+        break;
+
+    case 'i':
+        printf("vowel");
+        break;
+
+    case 'o':
+    printf("vowel");
+    break;
+
+    case 'u':
+    printf("vowel");
+    break;
+
+    case 'b':
+    printf("consotant");
+    break;
+    case 'c':
+    printf("consotant");
+    break;
+    case 'd':
+    printf("consotant");
+    break;
+    case 'f':
+    printf("consotant");
+    break;
+    case 'g':
+    printf("consotant");
+    break;
+    case 'h':
+    printf("consotant");
+    break;
+    case 'j':
+    printf("consotant");
+    break;
+    case 'k':
+    printf("consotant");
+    break;
+    case 'l':
+    printf("consotant");
+    break;
+    case 'm':
+    printf("consotant");
+    break;
+    case 'n':
+    printf("consotant");
+    break;
+    case 'p':
+    printf("consotant");
+    break;
+    case 'q':
+    printf("consotant");
+    break;
+    case 'r':
+    printf("consotant");
+    break;
+    case 's':
+    printf("consotant");
+    break;
+    case 't':
+    printf("consotant");
+    break;
+    case 'v':
+    printf("consotant");
+    break;
+    case 'w':
+    printf("consotant");
+    break;
+    case 'x':
+    printf("consotant");
+    break;
+    case 'y':
+    printf("consotant");
+    break;
+    case 'z':
+    printf("consotant");
+    break;
+    default:
+    printf("Invalid choice");
+    break;
+    }
+}
