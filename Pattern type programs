@@ -286,4 +286,53 @@ void main()
    
 }
 
+//  *  *  *  *  *
+//    *  *  *  *
+//     *  *  *
+//      *  *
+//       *
 
+#include "stdio.h"
+void main()
+{
+    int r,c,sp;
+    for(r=1;r<=5;r++)
+    {
+        for(sp=0;sp<=r-1;sp++)
+        {
+            printf(" ");
+        }
+        {
+            for(c=1;c<=6-r;c++)
+            {
+                printf(" * ");
+            }
+            printf("\n");
+        }
+    }
+}
+
+
+//   * * * * *
+//    * * * *
+//     * * *
+//      * *
+//       *
+
+#include "stdio.h"
+void main()
+{
+    int r,c,sp;
+    for(r=1;r<=5;r++)
+    {
+        for(sp=0;sp<=r-1;sp++)
+        {
+            printf(" ");
+        }
+        for(c=1;c<=6-r || c<=r-4;c++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+}
