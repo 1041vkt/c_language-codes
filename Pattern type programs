@@ -1,0 +1,289 @@
+// wap to print star pattern type.
+
+//  *  *  *  *
+//  *  *  *  *
+//  *  *  *  *
+//  *  *  *  *
+
+#include"stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=4;r++)
+    {
+        // for(c=1;c<=r;c++)     by this print 
+//  *
+//  *  *
+//  *  *  *
+//  *  *  *  *
+
+
+    for(c=1;c<=4;c++)
+        {
+            printf(" * ");
+        }
+        printf("\n");
+    }
+}
+// by for(c=r;c<=4;c++)
+//  *  *  *  *
+//  *  *  *
+//  *  *
+//  * 
+
+// for(c=r;c<=r;c++)
+//  *
+//  *
+//  *
+//  *
+
+
+// wap to print this type pattern.
+//  *
+//  *  *
+//  *  *  *
+//  *  *  *  *
+//  *  *  *  *  *
+
+
+#include "stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=5;r++)
+    {
+        for(c=1;c<=r;c++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+// wap to print this type of pattern.
+//  *  *  *  *  *
+//  *  *  *  *
+//  *  *  *
+//  *  *
+//  *
+
+
+#include "stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=5;r++)
+    {
+        for(c=r;c<=5;c++)
+        {
+            printf(" * ");
+        }
+        printf("\n");
+    }
+}
+
+// wap to print character in pattern.
+//  A
+//  A B
+//  A B C
+//  A B C D
+//  A B C D E
+
+
+#include "stdio.h"
+void main()
+{
+    char r,c;
+    for(r='A';r<='E';r++)
+    {
+        for(c='A';c<=r;c++)
+        {
+            printf(" %c",c);
+        }
+        printf("\n");
+    }
+}
+
+// wap to print below type pattern type.
+
+//  A B C D E
+//  B C D E
+//  C D E
+//  D E
+//  E
+
+
+#include "stdio.h"
+void main()
+{
+    char r,c;
+    for(r='A';r<='E';r++)
+    {
+        for(c=r;c<='E';c++)
+        {
+            printf(" %c",c);
+        }
+        printf("\n");
+    }
+}
+
+// wap to print below pattern type .
+
+//  A
+//  B B
+//  C C C
+//  D D D D
+//  E E E E E
+
+
+#include "stdio.h"
+void main()
+{
+    char r,c;
+    for(r='A';r<='E';r++)
+    {
+        for(c='A';c<=r;c++)
+        {
+            printf(" %c",r);
+        }
+        printf("\n");
+    }
+}
+
+//  *
+//  * *
+//  * * *
+//  * * * *
+//  * * *
+//  * *
+//  *
+
+#include "stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=7;r++)
+    {
+        for(c=1;c<=r && c<=8-r;c++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+}
+
+
+// wap to display the pattern like below given. 
+
+// 1
+// 12
+// 123
+// 1234
+
+
+#include "stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=4;r++)
+    {
+        for(c=1;c<=r;c++)
+        {
+            printf("%d",c);
+        }
+        printf("\n");
+    }
+}
+
+
+// 1
+// 22
+// 333
+// 4444
+
+#include "stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=4;r++)
+    {
+        for(c=1;c<=r;c++)
+        {
+            printf("%d",r);
+        }
+        printf("\n");
+    }
+}
+
+
+// *
+
+// * *
+
+// * * *
+
+// * * * *
+
+// * * * * *
+
+#include "stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=5;r++)
+    {
+        for(c=1;c<=r;c++)
+        {
+            printf("* ");
+        }
+        printf("\n\n");
+    }
+}
+
+
+//  * * * * *
+
+//  * * * *
+
+//  * * *
+
+//  * *
+
+//  *
+
+#include "stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=5;r++)
+    {
+        for(c=r;c<=5;c++)
+        {
+            printf(" *");
+        }
+        printf("\n\n");
+    }
+}
+
+// * * * * *
+// * * * * *
+// * * * * *
+// * * * * *
+// * * * * *
+
+#include"stdio.h"
+void main()
+{
+    int r,c;
+    for(r=1;r<=5;r++)
+    {
+        for(c=1;c<=5;c++)
+        {
+        printf("* ");
+        }   
+        printf("\n");
+    }
+   
+}
+
+
