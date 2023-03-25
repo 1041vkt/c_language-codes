@@ -1,0 +1,228 @@
+// 2. wap to find biggest number of array.
+
+#include"stdio.h"
+void main()
+{
+    int n;
+    printf("Enter the size of array :");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the elements of array :");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Dispaly the array :\n");
+    int biggest = arr[0];
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>biggest)
+        arr[i]=biggest;
+    }
+    printf("\n biggest number of array :%d",biggest);
+}
+
+
+// wap to print diagonal of matrix;
+
+#include"stdio.h"
+void main()
+{
+    int r,c,i,j;
+    printf("Enter the size of matrix :\n");
+    scanf("%d%d",&r,&c);
+    int arr[r][c];
+    printf("Enter the array elements :\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("The Diagonal elements of given matrix is :\n");
+    if(r==c)
+    {
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+                if(i==j)
+                {
+                    printf("%d ",arr[i][j]);
+                }
+                else
+                {
+                    printf("\t");
+                }
+            }
+            printf("\n");
+        }
+    }
+    else
+    {
+        printf("Matrix is not square matrix");
+    }
+}
+
+
+// 2. wap to print factorial number.
+
+#include"stdio.h"
+void main()
+{
+    int n;
+    printf("Enter the size of array :");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the elements of array :");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Display the array :\n");
+    for(int i=0;i<n;i++)
+    {
+        int temp=arr[i];
+        int fact=1;
+        for(int j=1;j<=temp;j++)
+        {
+            fact=fact*j;
+        }
+        printf("\n factorial is :%d\n",fact);
+    }
+}
+
+
+// 6.wap to check given number is neon number using array.
+
+#include"stdio.h"
+void main()
+{
+    int n;
+    printf("Enter the size of array :");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the elements of array :");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Display the array :");
+    for(int i=0;i<n;i++)
+    {
+        int temp=arr[i];
+        int multi=1,rem,sum=0;
+        multi=temp*temp;
+        while(multi>0)
+        {
+            rem=multi%10;
+            sum=sum+rem;
+            multi=multi/10;
+        }
+        if(temp==sum)
+        {
+            printf("Neon numner is :%d",temp);
+        }
+    }
+}
+
+
+#include"stdio.h"
+void main()
+{
+    int n;
+    printf("Enter the size of array :");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the elements of array : ");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    printf("Display the elements : ");
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            printf("Even number :%d",arr[i]);
+        }
+        else
+        {
+            printf("odd number :%d",arr[i]);
+        }
+    }
+}
+
+// 3. wap to check prime number in array.
+
+#include"stdio.h"
+void main()
+{
+    int n,j,t=0,c=0;
+    printf("How many numbers do you want to add in arrya? :\n");
+    scanf("%d",&n);
+    int arr[10],prime[10];
+    printf("Enter the elements of array :\n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(j=2;arr[i]>j;j++)
+        {
+            if(arr[i]%j==0)
+            {
+                c=1;
+                break;
+            }
+        }
+        if(c==0)
+        {
+            prime[t]=arr[i];
+            t++;
+        }
+        
+    }
+    printf("\nPrime Numbers in above array:\n");
+    for(int i=0;i<t;i++)
+    {
+        printf("%d ",prime[i]);
+    }
+    printf("\n");
+}
+
+// wap to search elements in array.
+
+#include"stdio.h"
+void main()
+{
+    int n,find,check=0;
+    printf("How many term u want ?");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter Elements :\n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter search elements :\n");
+    scanf("%d",&find);
+
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==find)
+        {
+            check++;
+            break;
+        }
+    }
+    if(check==1)
+    printf("elements presented");
+    else
+    printf("Not presented");
+}
+
+
