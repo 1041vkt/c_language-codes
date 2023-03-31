@@ -1,0 +1,441 @@
+// wap to caculate simple interest using noreturn with no passing parameter.
+
+#include"stdio.h"
+void si();
+void main()
+{
+    si();
+    si();
+    si();
+}
+void si()
+{
+    int p=1240,t=6,r=4;
+    int SI = (p*t*r)/100;
+    printf("simple interest is :%d\n",SI);
+}
+
+
+
+// wap to even_odd number using Return but no passing.
+
+#include"stdio.h"
+int even_odd();
+void main()
+{
+    int res=even_odd();
+    if(res==1)
+    printf("This is even number");
+    else
+    printf("This is odd number");
+}
+int even_odd()
+{
+    int num;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    if(num%2==0)
+    return 1;
+    else
+    return 0;
+}
+
+
+
+// wap to addition of two integer by using no return but passing parameter.
+
+#include"stdio.h"
+void sum(int a,int b);
+void main()
+{
+    // scanf("%d%d",&a,&b);
+    int x=20,y=30;
+    sum(x,y);
+}
+void sum(int a,int b)
+{
+    printf("Addition is:%d",(a+b));
+}
+
+
+// wap to check palindrome number using no return with no passing parameter. 
+
+#include"stdio.h"
+void palindrome();
+void main()
+{
+    palindrome();
+}
+void palindrome()
+{
+    int num,rem,i,rev=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    int temp = num;
+    while(num>0)
+    {
+        rem = num%10;
+        rev = (rev*10)+rem;
+        // sum = sum+rem;
+        num = num/10;
+    }
+    if(temp == rev)
+    {
+        printf("this is palindrome :%d\n",temp);
+    }
+    else
+    {
+        printf("not palindrome :%d\n",temp);
+    }
+}
+
+// wap to check armstrong number using no return with no passing parameter.
+
+#include"stdio.h"
+void armstrong();
+void main()
+{
+    armstrong();
+}
+void armstrong()
+{
+    int num,rem,sum=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    int temp=num;
+    while(num>0)
+    {
+        rem = num%10;
+        sum = sum+(rem*rem*rem);
+        num = num/10;
+    }
+    if(temp == sum)
+    {
+        printf("This is armstrong number :%d",temp);
+    }
+    else
+    {
+        printf("Not armstrong number :%d",temp);
+    }
+}
+
+// wap to print factorial of any given number using no return with no passing parameter.
+
+#include"stdio.h"
+void factorial();
+void main()
+{
+    factorial();
+}
+void factorial()
+{
+    int num ,i,fact=1;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    for(i=1;i<=num;i++)
+    {
+        fact =fact*i;
+    }
+    printf("factorial is :%d\n",fact);
+}
+
+// wap to cehck magic number using no return with no passing parameter.
+
+#include"stdio.h"
+void magic();
+void main()
+{
+    magic();
+}
+void magic()
+{
+    int num,rem,sum=0,rev=0,multi=1;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    int temp = num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem;
+        num=num/10;
+    }
+    int temp1 = sum;
+    while(sum>0)
+    {
+        rem = sum%10;
+        rev = (rev*10)+rem;
+        sum = sum/10;
+    }
+    multi = temp1*rev;
+    if(temp == multi)
+    {
+        printf("This is magic number :%d",temp);
+    }
+    else
+    {
+        printf("Not magic number :%d",temp);
+    }
+
+}
+
+// wap to print fibbonacci series by using no return with no passing parameter. 
+
+#include"stdio.h"
+void fibonacci();
+void main()
+{
+    fibonacci();
+}
+void fibonacci()
+{
+    int num,n1=0,n2=1,n3,i;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    printf("%d\n%d\n",n1,n2);
+    for(i=2;i<=num;i++)
+    {
+        n3=n1+n2;
+        printf("%d\n",n3);
+        n1=n2;
+        n2=n3;
+    }
+}
+
+// wap to check neon number using no return with passing parameter.
+
+#include"stdio.h"
+void neon();
+void main()
+{
+    neon();
+}
+void neon()
+{
+    int num,fact,rem,sum=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    fact = num*num;
+    while(fact>0)
+    {
+        rem = fact%10;
+        sum = sum+rem;
+        fact = fact/10;
+    }
+    if(num==sum)
+    {
+        printf("%d :is neon number",num);
+    }
+    else
+    {
+        printf("%d :is not neon number",num);
+    }
+}
+
+// wap to check perfect number using no return with no passing parmeter.
+
+#include"stdio.h"
+void perfect();
+void main()
+{
+    perfect();
+}
+void perfect()
+{
+    int num,i,fact=1,count=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    for(i=1;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            fact = fact*i;
+            count = count+i;
+        }
+    }
+    // printf("%d \n%d",fact,count);
+    if(num == count)
+    {
+        printf("Perfect number :%d",num);
+    }
+    else
+    {
+        printf("Not perfect number :%d",num);
+    }   
+}
+
+// wap to print reverse number of any given number using no return with no passing parameter.
+
+#include"stdio.h"
+void reverse();
+void main()
+{
+    reverse();
+}
+void reverse()
+{
+    int num,rem,rev=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    int temp=num;
+    while(num>0)
+    {
+        rem = num%10;
+        rev = (rev*10) + rem;
+        num = num/10;
+    }
+    printf("Reverse number :%d",rev);
+}
+
+// wap to check spy number using no return with no passing parameter.
+
+#include"stdio.h"
+void spy();
+void main()
+{
+    spy();
+}
+void spy()
+{
+    int num,sum=0,multi=1,rem;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    int temp = num;
+    while(num>0)
+    {
+        rem = num%10;
+        sum = sum+rem;
+        multi = multi*rem;
+        num = num/10;
+    }
+    if(sum == multi)
+    {
+        printf("%d : is a Spy number",temp);
+    }
+    else
+    {
+        printf("%d : is Not spy number",temp);
+    }
+}
+
+
+// wap to print reverse of the sum of any given number 
+// using no return with no passing parameter.
+
+#include"stdio.h"
+void sum_of_reverse();
+void main()
+{
+    sum_of_reverse();
+}
+void sum_of_reverse()
+{
+    int num,rem,rev=0,sum=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    while(num>0)
+    {
+        rem = num%10;
+        rev =(rev*10) + rem;
+        // sum = sum + rev;
+        num=num/10;
+    }
+    // int temp = rev;
+    while(rev>0)
+    {
+        rem = rev%10;
+        sum = sum+rem;
+        rev = rev/10;
+    }
+    printf("%d :is the sum of reverse given number ",sum);
+}
+
+// wap to check perfect number using NRNP.
+
+#include"stdio.h"
+void perfect_number();
+void main()
+{
+    perfect_number();
+}
+void perfect_number()
+{
+    int num,i,sum=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    for(i=1;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            sum = sum+i;
+        }
+    }
+    if(num == sum)
+    {
+    printf("%d :This is perfect number",num);
+    }
+    else
+    printf("%d :This is not perfect number",num);
+}
+// wap to check perfect number using NRNP.
+
+#include"stdio.h"
+void perfect_number();
+void main()
+{
+    perfect_number();
+}
+void perfect_number()
+{
+    int num,i,sum=0;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    for(i=1;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            sum = sum+i;
+        }
+    }
+    if(num == sum)
+    {
+    printf("%d :This is perfect number",num);
+    }
+    else
+    printf("%d :This is not perfect number",num);
+}
+
+
+// Merge two problem in this which is solving by using return but passing parameter.
+
+#include"stdio.h"
+float Simple_interest(int p,int r,int n);
+int even_odd();
+void main()
+{
+int p=1000,r=5,n=2;
+printf("Interest is: %.2f\n",Simple_interest(p,r,n));
+}
+// void main()
+{
+    int res = even_odd();
+    if(res == 1)
+    printf("This is even number");
+    else
+    printf("This is odd number");
+}
+float Simple_interest(int p,int r,int n)
+{
+    // float i=(p*r*n)/100;
+    return (p*r*n)/100;
+}
+int even_odd()
+{    
+    int num;
+    printf("Enter the number :");
+    scanf("%d",&num);
+    if(num%2==0)
+    return 1;
+    else
+    return 0;
+}
+
