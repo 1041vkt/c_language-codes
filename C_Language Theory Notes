@@ -1,0 +1,457 @@
+C programming :
+---------------------
+basic
+input/output
+control statement
+loop statement
+jump statement
+nested for loop
+array
+nd array
+string
+function
+union
+structure
+pointer
+recursion
+
+Basic:
+-------
+1) #: preprocessor directive
+
+2) include: is a folder name which contain header file.
+
+3) header file: header file which predefine function and extension of header file is .h .
+   like stdio.h,dos.h,conio.h etc. 
+
+4) stdio: standard input output .which contain printf(),scanf() etc.
+
+5) conio: console input output. which contain clrscr(),getch()...etc.
+
+6) void: void is a no return type or null return type.void always used in no return type function.
+
+7)main(): main is a function used for start execution of program and end execution of program.
+
+8) int a,b,add :
+--------------------
+this is known as variables.
+variables: variable is a memory space holder used to hold variable space.
+we can change value of variable in execution time.
+
+constant: constant also a memory space holder but we can not change value execution time. 
+constant value always fixed.
+
+Restriction for declare variables :
+-----------------------------------------------
+1)variable should be start with characters not digits.
+Ex :
+int 123;------------false
+int abc;.................true
+
+2) special chareacter are not allowed in variables :
+Ex: int % ,$ ,#;------------false
+
+3) space are not allowed in variable we can use underscore in variables.
+___________________________________________________________
+Ex :  int my name;------------------false
+       int my_name;---------------------true
+
+printf() :
+_____________
+printf() is a formatted function available in stdio.h header file.
+used to dislay output or any messages.
+
+scanf() :
+________
+scanf() is used for input data according to datatype with formate specifire.
+scanf also known as input function in c language also available in stdio.h header files.
+
+add = a+b;
+_________
+here add a,b is a operands and =,+ is a operator.
+
+Operator:
+________
+operator is a symbol used to perform relation two or more operands.
+
+Types of operator:
+___________________
+1)Arithmatic operator :
+___________________
++addition  - substraction * multiplication / devide
+% reminder operator
+
+2)Logical operator :
+_________________
+&&(and) : is used for checked both condition are true.
+||(or) : is used when single or both condition are true.
+|(not) : is used when true then false . and when false then true.
+
+3)Relational operator :
+_________________
+> , < , >= , <=  is used for relational operators.
+
+4)Assignment operator :
+_______________________
+=  , += , -= , *= , /= used to assign value right hand side to left hand side.
+
+5)Equality operator :
+______________________ 
+ ==   is used for compaare left hand side value to right hand side value.
+
+5)Incerment/Decrement operator :
+______________________________
+++  +1  is increment operator.
+ --   -1   is decrement operator.
+
+7)Conditional operator/Ternary operator :
+__________________________________
+?  ,  :   is used for condiotnal or ternary operator.
+ 
+8)Bitwise operator :
+________________
+&  |  ^  .  ~   work with binary operations.
+
+
+what is c programming:
+_____________________
+c programming is a mother language.
+mother language means most popular language like python,c++,java and C# these are all based on c language.
+Most popular opareration system Linux and unix these all based on c language.
+
+c also known structure based programming language.
+
+c++ is also a extended version of c language.
+
+Before c language algol b , bcpl language came in 1965 to 1968 after that in 1969. 
+Sir Dennis Ritchie developed a programming language 
+known as  c language in AT and T bell lab in USA .
+c also known as high level , low level and assembly level programming laguage.
+c language is pure case sensitive language.
+
+what is compiler :
+________________
+compiler which convert source code to machine code.
+compiler is a  also known as translator.
+compiler execute all code at a time.
+
+what is  interpreter :
+____________________
+Interpreter also a translator and compile source code line by line.
+
+what is keyword :
+_______________
+keyword is a reserve word and we can not declare any variable  
+or constant same name os keyword.
+32 keyword are used in c programming.
+
+format specifire :
+_________________
+formate specifire tells about data type and symbols;
+
+integer                     int                      %d
+decimal                   float                    %f
+character                char                    %c
+string                       string                  %s
+long int                    long                    %ld
+long float double   %lf              ........etc
+
+SDLC : (software development life cycle)
+_________________________________
+1)Requiremet  and analysis.
+2)Designing.
+3)Logical/Coding>
+4)Testing.
+5)Maintanance
+
+Data flow control:
+------------------------
+1)control statement:
+---------------------------
+control statement is used for control block of codes based on condition.
+i)simple if
+____________
+if statement:
+___________
+if is a keyword used in control staement for check single condition. if condition are true then block of code
+will be executed.
+
+Syntax:
+__________
+if(condition)
+{
+//block of codes;
+}
+
+ladder if statement :
+__________________
+else if keyword are used in ladder if. ladder if used when multiple condition are
+checked. condition checked one by one after thet else block will be executed.
+
+syntax:
+___________
+if (condition 1) 
+{
+// statement 1;
+}
+else if(condition 2)
+{
+// statement 2;
+}
+.
+.
+else
+{
+//statement;
+}
+
+nested if :
+__________
+nested if contain condition inside another condition.
+when outer condition is true then inner condition is executed.
+otherwise else block will be executed.
+
+Syntax:
+__________
+if (condition)
+{
+                       if(condition)
+	  {
+	 //statement; 
+	}
+	else
+	{
+	//statement;
+	}
+}
+else
+{
+	if (condition)
+	{
+	//statement;
+	}
+	else
+	{
+	//statement;
+	}
+}
+
+else:
+________
+when if condition is false then else block will be executed.
+
+Syntsx:
+______
+if(condition)
+{
+//statement;
+}
+else
+{
+//statement;
+}
+ 
+ii)switch:
+____________
+
+switch is a keyword used in control statement.
+switch statement contain break ,case and default keywords.
+case is used for condition.
+break is used for stop forcefully execution thre code.
+if all case condition are fase then default block will be executed.
+
+Syntax:
+___________
+switch(var_name)
+{
+case1:
+//statement;
+break;
+case 2:
+//statement;
+break;
+.
+.
+.
+}
+
+2) Loop statement:
+________________
+loop staement is used for execute block of code repeatadly until given condition are true.
+Types of loop:
+___________
+1) Entry control loop :
+_____________________
+i) while loop:
+___________
+while is a keyword used in loop statement.
+while contain initialization,condition and updation.
+
+Syntax:
+_________
+initialization;
+while(condition)
+{
+//updation;
+}
+
+ii) for loop:
+_________
+
+Syntax:
+initilization;
+for(;condition;)
+{
+//body of loop
+//updation;
+}
+
+/or
+
+for(initilization;condition;updation)
+{
+//condition;
+}
+
+
+
+2)Exit control loop:
+__________________
+i) do-while loop:
+_______________
+do-while is a exit control loop. do is a keyword.
+In this concept compulsary code execute once.
+
+Syntax:
+_________
+do
+{
+//body of loop 
+}
+while(condition)
+//updation;
+
+
+ii) Nested for loop:
+_________________
+nested for loop contain one or more for loop inside another for loop.
+outer loop is responsible for rows and inner loop is responsible for columns.
+when outer loop execute one time then inner loop execute complete.
+
+Syntax:
+_______
+for(initilization;condition;updation) //outer loop
+{
+	for(initilization;condition;updation) //inner loop
+	{
+	//body of loop;
+	}
+}
+
+3) jump statement:
+________________
+In c programming break,continue ,goto keyword are used in jump statement .
+break:
+_______
+break is used  for stop forcefully execution of switch and loop statement.
+
+Syntax:
+______
+break;
+
+continue:
+_________
+contunue is used for skip current execution of code.
+
+Syntax:
+_______
+continue;
+
+goto:
+_______
+goto statement send execution to lable based on condition.
+
+Syntax:
+_______
+lable_name:
+//statement;
+goto lable_name;  
+
+
+Array:
+_____
+array is the collection of similar data types means same type of data.
+array is store multiple values in a single variables.
+array start index with 0 and lenght -1.
+square breacket are used to represent array in c programming.
+
+Types of array:
+___________
+ 1. Single dimensional array:
+__________________________
+In this type of array we can use single square breacket with size according to need.
+
+Syntax:
+______
+datatype array_name[size];
+
+Array Traversal:
+____________
+1).Insertion
+2).Selection
+3).Updation 
+4). Deletion
+5). Searching
+6). Sorting
+
+2.) Multidimensional Array:
+_______________________
+In this multi dimensional array we can use multiple square breacket.
+This array is used for matrix representation.
+nested for loop concept used in 2d array.
+
+Syntax:
+_________
+datatype array_name[size][size].....
+
+Explanatoin of 2d array:
+____________________
+1 2 3           00  01  02
+4 5 6   =      10  11  12
+2 3 4           20  21  22
+
+ String :
+__________
+
+String is a Collection of  array.
+String also used index 0 to lenght-1.
+In C language no any string are not used
+In C we used char data type for string. 
+for using predefined function of string ,we used string.h header file.
+
+ Syntax :
+_________
+char variable_name[size]
+
+predefine function in string:
+__________________________
+1: gets( ) :
+------------- gets is used for input in string.
+
+2: getch( )
+---------------getch function is used for uer input .but given value only one character. character is not visible.
+
+3. getche( ):
+------------------this function is always used for user input but given value only one character .character is always visible. 
+
+4. getchar( ):
+---------------------this function is used for user input .given input string .but read only one character .
+
+5. strelen( ) :
+---------------this function is used for find lenght of string . this functio store in string.h header file.
+
+6. strcpy( ):
+---------------this function is used for copy one string to another string.
+
+7. strcmp( ):
+--------------this function is used for compare two string.
