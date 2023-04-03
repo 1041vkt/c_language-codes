@@ -455,3 +455,128 @@ __________________________
 
 7. strcmp( ):
 --------------this function is used for compare two string.
+
+
+     FUNCTION :
+      ___________
+
+Function:-------
+--------
+function is a block of codes used for perform specific task.
+function provide reusability of code.
+In c programming function follows three steps.
+
+1)fuction declaration:
+---------------------
+function declaration always out of main function and terminate with semi colon.
+
+2)function defination :
+----------------------
+function defination is always define in up of the main function or down of the main function.
+
+3)function calling:
+-------------------
+function calling always in main function.
+
+  Types of function:
+  --------------------------
+
+1). Pre-define function
+--------------------
+this function is already define into the compiler.
+like: printf( ),scanf( ),getch( )........etc.
+
+2.) User define function
+----------------------
+UDF is declare by user or programmer.
+
+Types of UDF:
+------------
+1)No return no passing parameter.
+2)No return but passing parameter.
+3)Return but No passing parameter.
+4)Return but passing parameter.
+
+1- no return no passing parameter:-
+
+        In this type of function void keyword are used and this is compulsary that function body print main function.
+
+ Syntax:-
+_________
+     void function_name();    //function declaring
+     void function_name()     // function define 
+           {
+              //body of function;
+            }
+    void main(){
+           //function_name();  //function calling;
+       }
+
+2- no return but passing parameter:
+
+          In this type of finction we have variable that variable know as farmal variable,farmal variables have no any type value . 
+          In this variable always assign value in function calling.
+    syntax:-
+        void function_name(parameter1, parameter2);
+        void function_name(parameter1, parameter2)
+        {
+           // body of function;
+        }
+        void main(){
+          //function_name(parameter1, parameter2);
+        }
+
+3.) Return but no passing parameter :
+______________________________
+
+Return keyword are used in this type of function.
+In this function return value used according to need.
+In this function result can not desplay in function body.
+
+Syntax :
+________
+
+datatype function_name( );  
+                                                                          // function declaration 
+datatype function_name( )
+                 				// function defination
+{
+return -------;
+}
+void main( )
+{
+function_name( );                         // function calling
+}
+
+4). Return with passing parameter :
+__________________________________
+
+datatype function_name(para1,para2 );         //function  declaration
+
+datatype function)_nmae(para1,para2)        // function definition
+
+{
+----
+return -----;
+---}
+
+void main( )                                            // function calling
+
+{
+   function_name( para1,para2);
+}
+
+
+
+STRUCTURE :
+___________
+
+Structure is a collection of different datatypes variable. each variable are known as structure member. 
+struct keyword are used in structure.
+
+Syntax :
+_______
+struct structure_name
+{
+datatype var1;datatype var2; datatype var3;
+}
